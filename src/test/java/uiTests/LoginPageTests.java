@@ -2,10 +2,11 @@ package uiTests;
 
 import org.junit.jupiter.api.Test;
 import pageObject.LoginPage;
+import uiConfig.BaseTest;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class LoginPageTests {
+public class LoginPageTests extends BaseTest {
     @Test
     public void checkInputEmail(){
         open("/signup");
